@@ -1,0 +1,9 @@
+.topContainer {
+    background: url("https://img.freepik.com/free-vector/abstract-black-lines-geometric-background_677411-2748.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;    
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+}
