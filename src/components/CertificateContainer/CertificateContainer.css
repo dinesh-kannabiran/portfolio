@@ -1,0 +1,89 @@
+.certificateContainer {
+  background-image: url("https://img.freepik.com/free-vector/abstract-black-lines-geometric-background_677411-2748.jpg");
+  background-size: cover;
+  background-position: center;    
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  background-attachment: fixed;
+  }
+  .certificateContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #dfb015; /* Optional background color */
+  }
+  
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding-top: 70px;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  span {
+    color: #f64c08;
+  }
+  
+  .certificateImg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; /* Adjust this value for responsiveness */
+  }
+  
+  .certificateImg div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cf9e18; /* Optional */
+    padding: 4px; /* Optional padding around the image */
+    border-radius: 6px; /* Optional rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .certificateImg div:hover {
+    cursor: pointer;  
+  transform: scale(1.03); /* Slightly zooms in the certificate */
+  border: 2px solid #cf9e18; /* Blue border on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Optional hover shadow */
+  }
+  .certificateImg img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px; /* Optional rounded image corners */
+  }
+  
+
+  /* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .certificateImg {
+    grid-template-columns: repeat(2, 1fr); /* Adjust grid for tablets */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .certificateImg {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    gap: 15px; /* Reduce gap for smaller devices */
+  }
+
+  .heading {
+    font-size: 1.5rem; /* Smaller heading for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .certificateImg div {
+    padding: 2px; /* Reduce padding for small devices */
+  }
+
+  .heading {
+    font-size: 1.25rem; /* Further reduce heading size */
+    padding-top: 50px; /* Adjust spacing for mobile */
+  }
+}
